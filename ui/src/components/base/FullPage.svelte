@@ -12,10 +12,9 @@
                     <img
                         src="{import.meta.env.BASE_URL}images/logo.svg"
                         alt="PocketBase logo"
-                        width="40"
-                        height="40"
+                        width="100"
                     />
-                    <span class="txt">Pocket<strong>Base</strong></span>
+                    <span class="txt">Apex<strong>MB</strong></span>
                 </figure>
             </div>
             <div class="clearfix" />
