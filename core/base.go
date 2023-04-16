@@ -10,16 +10,16 @@ import (
 	"time"
 
 	"github.com/fatih/color"
+	"github.com/loganmac/pocketbase/daos"
+	"github.com/loganmac/pocketbase/models"
+	"github.com/loganmac/pocketbase/models/settings"
+	"github.com/loganmac/pocketbase/tools/filesystem"
+	"github.com/loganmac/pocketbase/tools/hook"
+	"github.com/loganmac/pocketbase/tools/mailer"
+	"github.com/loganmac/pocketbase/tools/routine"
+	"github.com/loganmac/pocketbase/tools/store"
+	"github.com/loganmac/pocketbase/tools/subscriptions"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/daos"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/models/settings"
-	"github.com/pocketbase/pocketbase/tools/filesystem"
-	"github.com/pocketbase/pocketbase/tools/hook"
-	"github.com/pocketbase/pocketbase/tools/mailer"
-	"github.com/pocketbase/pocketbase/tools/routine"
-	"github.com/pocketbase/pocketbase/tools/store"
-	"github.com/pocketbase/pocketbase/tools/subscriptions"
 )
 
 const (

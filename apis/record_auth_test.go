@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/labstack/echo/v5"
-	"github.com/pocketbase/pocketbase/daos"
-	"github.com/pocketbase/pocketbase/tests"
-	"github.com/pocketbase/pocketbase/tools/types"
+	"github.com/loganmac/pocketbase/daos"
+	"github.com/loganmac/pocketbase/tests"
+	"github.com/loganmac/pocketbase/tools/types"
 )
 
 func TestRecordAuthMethodsList(t *testing.T) {

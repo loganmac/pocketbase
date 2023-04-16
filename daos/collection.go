@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/loganmac/pocketbase/models"
+	"github.com/loganmac/pocketbase/models/schema"
+	"github.com/loganmac/pocketbase/tools/list"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/models/schema"
-	"github.com/pocketbase/pocketbase/tools/list"
 )
 
 // CollectionQuery returns a new Collection select query.

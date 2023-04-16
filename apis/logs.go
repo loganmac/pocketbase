@@ -4,10 +4,10 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo/v5"
+	"github.com/loganmac/pocketbase/core"
+	"github.com/loganmac/pocketbase/models"
+	"github.com/loganmac/pocketbase/tools/search"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/tools/search"
 )
 
 // bindLogsApi registers the request logs api endpoints.

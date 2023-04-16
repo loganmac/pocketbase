@@ -13,13 +13,13 @@ import (
 	"testing"
 
 	"github.com/labstack/echo/v5"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/daos"
-	"github.com/pocketbase/pocketbase/forms"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/tests"
-	"github.com/pocketbase/pocketbase/tools/filesystem"
-	"github.com/pocketbase/pocketbase/tools/list"
+	"github.com/loganmac/pocketbase/core"
+	"github.com/loganmac/pocketbase/daos"
+	"github.com/loganmac/pocketbase/forms"
+	"github.com/loganmac/pocketbase/models"
+	"github.com/loganmac/pocketbase/tests"
+	"github.com/loganmac/pocketbase/tools/filesystem"
+	"github.com/loganmac/pocketbase/tools/list"
 )
 
 func hasRecordFile(app core.App, record *models.Record, filename string) bool {

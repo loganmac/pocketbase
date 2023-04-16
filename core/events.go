@@ -2,16 +2,16 @@ package core
 
 import (
 	"github.com/labstack/echo/v5"
-	"github.com/pocketbase/pocketbase/daos"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/models/schema"
-	"github.com/pocketbase/pocketbase/models/settings"
-	"github.com/pocketbase/pocketbase/tools/auth"
-	"github.com/pocketbase/pocketbase/tools/filesystem"
-	"github.com/pocketbase/pocketbase/tools/hook"
-	"github.com/pocketbase/pocketbase/tools/mailer"
-	"github.com/pocketbase/pocketbase/tools/search"
-	"github.com/pocketbase/pocketbase/tools/subscriptions"
+	"github.com/loganmac/pocketbase/daos"
+	"github.com/loganmac/pocketbase/models"
+	"github.com/loganmac/pocketbase/models/schema"
+	"github.com/loganmac/pocketbase/models/settings"
+	"github.com/loganmac/pocketbase/tools/auth"
+	"github.com/loganmac/pocketbase/tools/filesystem"
+	"github.com/loganmac/pocketbase/tools/hook"
+	"github.com/loganmac/pocketbase/tools/mailer"
+	"github.com/loganmac/pocketbase/tools/search"
+	"github.com/loganmac/pocketbase/tools/subscriptions"
 )
 
 type BaseCollectionEvent struct {

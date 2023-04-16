@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pocketbase/pocketbase/tools/types"
+	"github.com/loganmac/pocketbase/tools/types"
 )
 
 func TestNowDateTime(t *testing.T) {

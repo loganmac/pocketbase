@@ -9,9 +9,9 @@ import (
 	"github.com/dop251/goja_nodejs/console"
 	"github.com/dop251/goja_nodejs/process"
 	"github.com/dop251/goja_nodejs/require"
+	"github.com/loganmac/pocketbase/core"
+	m "github.com/loganmac/pocketbase/migrations"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/core"
-	m "github.com/pocketbase/pocketbase/migrations"
 )
 
 // MigrationsOptions defines optional struct to customize the default migrations loader behavior.

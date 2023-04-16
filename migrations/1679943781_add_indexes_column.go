@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/loganmac/pocketbase/daos"
+	"github.com/loganmac/pocketbase/models"
+	"github.com/loganmac/pocketbase/tools/dbutils"
+	"github.com/loganmac/pocketbase/tools/list"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/daos"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/tools/dbutils"
-	"github.com/pocketbase/pocketbase/tools/list"
 )
 
 // Adds _collections indexes column (if not already).

@@ -6,12 +6,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pocketbase/pocketbase/daos"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/models/schema"
-	"github.com/pocketbase/pocketbase/plugins/migratecmd"
-	"github.com/pocketbase/pocketbase/tests"
-	"github.com/pocketbase/pocketbase/tools/types"
+	"github.com/loganmac/pocketbase/daos"
+	"github.com/loganmac/pocketbase/models"
+	"github.com/loganmac/pocketbase/models/schema"
+	"github.com/loganmac/pocketbase/plugins/migratecmd"
+	"github.com/loganmac/pocketbase/tests"
+	"github.com/loganmac/pocketbase/tools/types"
 )
 
 func TestAutomigrateCollectionCreate(t *testing.T) {
@@ -69,9 +69,9 @@ import (
 	"encoding/json"
 
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/daos"
-	m "github.com/pocketbase/pocketbase/migrations"
-	"github.com/pocketbase/pocketbase/models"
+	"github.com/loganmac/pocketbase/daos"
+	m "github.com/loganmac/pocketbase/migrations"
+	"github.com/loganmac/pocketbase/models"
 )
 
 func init() {
@@ -241,9 +241,9 @@ import (
 	"encoding/json"
 
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/daos"
-	m "github.com/pocketbase/pocketbase/migrations"
-	"github.com/pocketbase/pocketbase/models"
+	"github.com/loganmac/pocketbase/daos"
+	m "github.com/loganmac/pocketbase/migrations"
+	"github.com/loganmac/pocketbase/models"
 )
 
 func init() {
@@ -481,10 +481,10 @@ import (
 	"encoding/json"
 
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/daos"
-	m "github.com/pocketbase/pocketbase/migrations"
-	"github.com/pocketbase/pocketbase/models/schema"
-	"github.com/pocketbase/pocketbase/tools/types"
+	"github.com/loganmac/pocketbase/daos"
+	m "github.com/loganmac/pocketbase/migrations"
+	"github.com/loganmac/pocketbase/models/schema"
+	"github.com/loganmac/pocketbase/tools/types"
 )
 
 func init() {

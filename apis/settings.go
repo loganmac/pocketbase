@@ -7,10 +7,10 @@ import (
 
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/labstack/echo/v5"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/forms"
-	"github.com/pocketbase/pocketbase/models/settings"
-	"github.com/pocketbase/pocketbase/tools/security"
+	"github.com/loganmac/pocketbase/core"
+	"github.com/loganmac/pocketbase/forms"
+	"github.com/loganmac/pocketbase/models/settings"
+	"github.com/loganmac/pocketbase/tools/security"
 )
 
 // bindSettingsApi registers the settings api endpoints.

@@ -3,8 +3,8 @@ package daos_test
 import (
 	"testing"
 
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/tests"
+	"github.com/loganmac/pocketbase/models"
+	"github.com/loganmac/pocketbase/tests"
 )
 
 func TestExternalAuthQuery(t *testing.T) {

@@ -7,12 +7,12 @@ import (
 	"strings"
 
 	"github.com/fatih/color"
+	"github.com/loganmac/pocketbase/core"
+	"github.com/loganmac/pocketbase/daos"
+	"github.com/loganmac/pocketbase/models"
+	"github.com/loganmac/pocketbase/models/schema"
+	"github.com/loganmac/pocketbase/tools/types"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/daos"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/models/schema"
-	"github.com/pocketbase/pocketbase/tools/types"
 	"github.com/spf13/cobra"
 )
 

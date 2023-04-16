@@ -17,11 +17,11 @@ import (
 	"unicode"
 
 	"github.com/dop251/goja"
+	"github.com/loganmac/pocketbase/apis"
+	"github.com/loganmac/pocketbase/daos"
+	"github.com/loganmac/pocketbase/models"
+	"github.com/loganmac/pocketbase/models/schema"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/apis"
-	"github.com/pocketbase/pocketbase/daos"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/models/schema"
 )
 
 func NewBaseVM() *goja.Runtime {

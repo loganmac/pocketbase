@@ -3,7 +3,7 @@ package models
 import (
 	"strings"
 
-	"github.com/pocketbase/pocketbase/models/schema"
+	"github.com/loganmac/pocketbase/models/schema"
 )
 
 // RequestData defines a HTTP request data struct, usually used

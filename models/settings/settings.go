@@ -9,10 +9,10 @@ import (
 
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/go-ozzo/ozzo-validation/v4/is"
-	"github.com/pocketbase/pocketbase/tools/auth"
-	"github.com/pocketbase/pocketbase/tools/mailer"
-	"github.com/pocketbase/pocketbase/tools/rest"
-	"github.com/pocketbase/pocketbase/tools/security"
+	"github.com/loganmac/pocketbase/tools/auth"
+	"github.com/loganmac/pocketbase/tools/mailer"
+	"github.com/loganmac/pocketbase/tools/rest"
+	"github.com/loganmac/pocketbase/tools/security"
 )
 
 // SecretMask is the default settings secrets replacement value

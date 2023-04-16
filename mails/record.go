@@ -5,12 +5,12 @@ import (
 	"log"
 	"net/mail"
 
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/mails/templates"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/models/settings"
-	"github.com/pocketbase/pocketbase/tokens"
-	"github.com/pocketbase/pocketbase/tools/mailer"
+	"github.com/loganmac/pocketbase/core"
+	"github.com/loganmac/pocketbase/mails/templates"
+	"github.com/loganmac/pocketbase/models"
+	"github.com/loganmac/pocketbase/models/settings"
+	"github.com/loganmac/pocketbase/tokens"
+	"github.com/loganmac/pocketbase/tools/mailer"
 )
 
 // SendRecordPasswordReset sends a password reset request email to the specified user.

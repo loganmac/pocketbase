@@ -7,12 +7,12 @@ import (
 	"testing"
 
 	"github.com/labstack/echo/v5"
-	"github.com/pocketbase/pocketbase/apis"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/tests"
-	"github.com/pocketbase/pocketbase/tools/hook"
-	"github.com/pocketbase/pocketbase/tools/subscriptions"
+	"github.com/loganmac/pocketbase/apis"
+	"github.com/loganmac/pocketbase/core"
+	"github.com/loganmac/pocketbase/models"
+	"github.com/loganmac/pocketbase/tests"
+	"github.com/loganmac/pocketbase/tools/hook"
+	"github.com/loganmac/pocketbase/tools/subscriptions"
 )
 
 func TestRealtimeConnect(t *testing.T) {

@@ -10,14 +10,14 @@ import (
 	"time"
 
 	"github.com/labstack/echo/v5"
+	"github.com/loganmac/pocketbase/core"
+	"github.com/loganmac/pocketbase/forms"
+	"github.com/loganmac/pocketbase/models"
+	"github.com/loganmac/pocketbase/resolvers"
+	"github.com/loganmac/pocketbase/tools/routine"
+	"github.com/loganmac/pocketbase/tools/search"
+	"github.com/loganmac/pocketbase/tools/subscriptions"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/forms"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/resolvers"
-	"github.com/pocketbase/pocketbase/tools/routine"
-	"github.com/pocketbase/pocketbase/tools/search"
-	"github.com/pocketbase/pocketbase/tools/subscriptions"
 )
 
 // bindRealtimeApi registers the realtime api endpoints.
@@ -59,7 +59,7 @@ func (api *realtimeApi) connect(c echo.Context) error {
 	c.Response().Header().Set("Content-Type", "text/event-stream; charset=UTF-8")
 	c.Response().Header().Set("Cache-Control", "no-store")
 	c.Response().Header().Set("Connection", "keep-alive")
-	// https://github.com/pocketbase/pocketbase/discussions/480#discussioncomment-3657640
+	// https://github.com/loganmac/pocketbase/discussions/480#discussioncomment-3657640
 	// https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_buffering
 	c.Response().Header().Set("X-Accel-Buffering", "no")
 

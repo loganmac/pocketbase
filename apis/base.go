@@ -13,8 +13,8 @@ import (
 
 	"github.com/labstack/echo/v5"
 	"github.com/labstack/echo/v5/middleware"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/ui"
+	"github.com/loganmac/pocketbase/core"
+	"github.com/loganmac/pocketbase/ui"
 	"github.com/spf13/cast"
 )
 
