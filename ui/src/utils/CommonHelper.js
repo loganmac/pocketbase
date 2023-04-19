@@ -1324,6 +1324,16 @@ export default class CommonHelper {
 
                 input.click();
             },
+            setup: (editor) => {
+                editor.on('keydown', (e) => {
+                    // propagate save shortcut to the parent
+                    if (e.ctrlKey && e.code == "KeyS" && editor.formElement) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        editor.formElement.dispatchEvent(new KeyboardEvent("keydown", e));
+                    }
+                })
+            },
         };
     }
 
@@ -1424,7 +1434,7 @@ export default class CommonHelper {
      */
     static getAllCollectionIdentifiers(collection, prefix = "") {
         if (!collection) {
-            return;
+            return [];
         }
 
         let result = [prefix + "id"];
@@ -1654,5 +1664,37 @@ export default class CommonHelper {
         }
 
         return hasChange ? CommonHelper.buildIndex(parsed) : idx;
+    }
+
+    /**
+     * Normalizes the search filter by converting a simple search term into
+     * a wildcard filter expression using the provided fallback search fields.
+     *
+     * If searchTerm is already an expression it is returned without changes.
+     *
+     * @param  {String} searchTerm
+     * @param  {Array}  fallbackFields
+     * @return {String}
+     */
+    static normalizeSearchFilter(searchTerm, fallbackFields) {
+        searchTerm = (searchTerm || "").trim();
+        if (!searchTerm || !fallbackFields.length) {
+            return searchTerm;
+        }
+
+        const opChars = ["=", "!=", "~", "!~", ">", ">=", "<", "<="];
+
+        // loosely check if it is already a filter expression
+        for (const op of opChars) {
+            if (searchTerm.includes(op)) {
+                return searchTerm;
+            }
+        }
+
+        searchTerm = isNaN(searchTerm) && searchTerm != "true" && searchTerm != "false"
+            ? `"${searchTerm.replace(/^[\"\'\`]|[\"\'\`]$/gm, "")}"`
+            : searchTerm;
+
+        return fallbackFields.map((f) => `${f}~${searchTerm}`).join("||");
     }
 }
